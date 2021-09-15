@@ -8,7 +8,7 @@ This makes it easy to use all your favorite programs naturally from within `Neov
 
 # Usage
 
-### Clone & Build
+## Clone & Build
 You'll first need the `flatnvim` binary on you system.
 
 ```sh
@@ -17,24 +17,24 @@ cd flatnvim
 ./build.sh
 ```
 
-### Environment Variables
-There are 3 environment variable to use with `flatnvim`
-Add them to the config file for your shell (.bashrc, .profile, .zprofile, etc)
+## Environment Variables
+There are 3 environment variable to use with `flatnvim`.
+Add them to the config file for your shell (.bashrc, .profile, .zprofile, etc).
 
-##### Required: set path to the actual editor.
+### Required: set the path to the actual editor.
 ```sh
 export FLATNVIM_EDITOR="nvim"
 ```
 - When `flatnvim` is called from your regular terminal, it will just pass through to this editor.
 
-##### Recommended: set the path to the `flatnvim` binary as your default terminal editor.
+### Recommended: set the path to the `flatnvim` binary as your default terminal editor.
 ```sh
 export EDITOR="$HOME/repos/flatnvim/bin/flatnvim"
 ```
 - If you don't know what this should be, use the path printed by the build.sh script.
 - In addition, I personally make aliases to this: `alias vim="$EDITOR`
 
-##### Optional: set an extra nvim command to be executed when preventing nested instances.
+### Optional: set an extra nvim command to be executed when preventing nested instances.
 ```sh
 export FLATNVIM_EXTRA_COMMAND="if exists(':AirlineRefresh') == 2 | AirlineRefresh | endif"
 ```
