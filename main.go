@@ -11,7 +11,7 @@ import (
 func main() {
 	log.SetFlags(0)
 
-	const version string = "v0.1.0"
+	const version string = "v0.2.0"
 	err := os.Setenv("FLATNVIM_VERSION", version)
 	if err != nil {
 		log.Fatalf("%v: unable to set FLATNVIM_VERSION environment variable\n", version)
