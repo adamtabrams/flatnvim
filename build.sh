@@ -1,5 +1,5 @@
 #!/bin/sh
 
 go build -o bin/ || { echo "failure"; exit 1; }
-echo "success"
+echo "build successful"
 echo "path to the flatnvim binary: $PWD/bin/flatnvim"
