@@ -34,8 +34,18 @@ export EDITOR="$HOME/repos/flatnvim/bin/flatnvim"
 - If you don't know what this should be, use the path printed by the build.sh script.
 - In addition, I personally make aliases to this: `alias vim="$EDITOR`
 
-### Optional: set an extra nvim command to be executed when preventing nested instances.
+### Optional: set an extra Neovim command to be executed when preventing nested instances.
 ```sh
 export FLATNVIM_EXTRA_COMMAND="if exists(':AirlineRefresh') == 2 | AirlineRefresh | endif"
 ```
 - I use the command above to refresh my status bar.
+
+
+## Neovim Configs
+
+### Recommended: disable status line when in terminal mode.
+```sh
+autocmd TermOpen * setlocal laststatus=0 noshowmode noruler
+  \| autocmd TermClose * setlocal laststatus=2 showmode ruler
+
+```
