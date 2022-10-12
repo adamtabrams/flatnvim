@@ -1,5 +1,5 @@
 module flatnvim
 
-go 1.17
+go 1.19
 
-require github.com/neovim/go-client v1.1.7
+require github.com/neovim/go-client v1.2.1
