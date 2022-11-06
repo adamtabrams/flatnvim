@@ -11,7 +11,7 @@ import (
 )
 
 func main() {
-	const version string = "v0.2.1"
+	const version string = "v1.0.0"
 
 	log.SetFlags(log.Ldate | log.Ltime)
 	log.SetPrefix(version + " ")
