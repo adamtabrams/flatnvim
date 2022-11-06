@@ -2,9 +2,9 @@
 
 The goal of `flatnvim` is to make it easy to use [Neovim](https://neovim.io/)'s
 [terminal emulator](https://neovim.io/doc/user/nvim_terminal_emulator.html).
-When you open files from within the `Neovim` terminal, `flatnvim` will automatically add them
+When you open files from within the Neovim terminal, `flatnvim` will automatically add them
 to the current instance instead of creating a new nested one.
-Now you can easily use all your favorite command line programs inside `Neovim`.
+Now you can easily use all your favorite command line programs inside Neovim.
 
 # Usage
 
@@ -40,7 +40,7 @@ export FLATNVIM_LOGFILE="$HOME/repos/flatnvim/log.txt"
 ```
 - If this is not set, any error messages are just printed.
 
-### Optional: set an extra `Neovim` command to be executed when preventing nested instances.
+### Optional: set an extra Neovim command to be executed when preventing nested instances.
 ```sh
 export FLATNVIM_EXTRA_COMMAND="echo 'it works' | sleep"
 ```
@@ -69,7 +69,7 @@ autocmd TermLeave * AirlineRefresh
 
 ## Neovim Function
 
-Adding this function to your `Neovim` config makes it easier to access the terminal and command line programs.
+Adding this function to your Neovim config makes it easier to access the terminal and command line programs.
 
 ```viml
 function! TempTerm(...)
