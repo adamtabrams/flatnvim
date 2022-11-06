@@ -64,7 +64,7 @@ func main() {
 	defer v.Close()
 
 	b := v.NewBatch()
-	b.Command(":let flatnvim_buf=bufname()")
+	b.Command("let flatnvim_buf=bufname()")
 
 	var curDir string
 	if dir, err := os.Getwd(); err == nil {
@@ -91,10 +91,10 @@ func main() {
 		}
 
 		path := trimPath(file, curDir, vimDir, homeDir)
-		b.Command(":e " + path)
+		b.Command("e " + path)
 	}
 
-	b.Command(":exe 'bd! '.flatnvim_buf")
+	b.Command("exe 'bd! '.flatnvim_buf")
 
 	extraCmd := os.Getenv("FLATNVIM_EXTRA_COMMAND")
 	if extraCmd != "" {

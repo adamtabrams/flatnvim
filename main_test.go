@@ -120,6 +120,14 @@ func TestTrimPath(t *testing.T) {
 			vimDir:   "/vim/",
 			expected: "dir/file.txt",
 		},
+		{
+			name:     "all dirs used",
+			path:     "file.txt",
+			curDir:   "/home/dir/",
+			vimDir:   "/home/dir/",
+			homeDir:  "/home",
+			expected: "file.txt",
+		},
 	}
 
 	for _, tt := range tests {
