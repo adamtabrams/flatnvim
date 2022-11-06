@@ -16,3 +16,6 @@
 
 bin/
 testing/
+
+.DS_Store
+log.txt
