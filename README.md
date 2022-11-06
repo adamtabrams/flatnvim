@@ -44,7 +44,7 @@ export FLATNVIM_LOGFILE="$HOME/repos/flatnvim/log.txt"
 ```sh
 export FLATNVIM_EXTRA_COMMAND="echo 'it works' | sleep"
 ```
-- Just in case you want `flatnvim` to do something extra before it opens file in the parent instance.
+- Just in case you want `flatnvim` to do something extra before it opens files in the parent instance.
 
 
 ## Neovim Configs
