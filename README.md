@@ -56,12 +56,12 @@ autocmd TermOpen * setlocal laststatus=0 noshowmode noruler
 
 ```
 
-### Recommended: quickly exit terminal if commands were successful.
+### Recommended: skip exit prompt if terminal commands were successful.
 ```viml
 autocmd TermClose * if !v:event.status | exe 'bdelete! '..expand('<abuf>') | endif
 ```
 
-### Optional: fixes issue with Airline that occurs when window focus is lost.
+### Optional: fix issue with Airline that occurs when window focus is lost.
 ```viml
 autocmd TermLeave * AirlineRefresh
 ```
@@ -69,7 +69,7 @@ autocmd TermLeave * AirlineRefresh
 
 ## Neovim Function
 
-Adding this function to your Neovim config makes it easier to access the terminal and command line programs.
+Adding this function to your Neovim config makes it easier to access the terminal and specific command line programs.
 
 ```viml
 function! TempTerm(...)
